@@ -1,0 +1,56 @@
+{
+    "CANTON": "Basel-Landschaft",
+    "CANTON_ABBREVIATION": "BL",
+    "CANTON_MAX_MUNIC_BFS_ID": "2896",
+    "CANTON_MIN_MUNIC_BFS_ID": "2761",
+
+
+    "DB_SCHEMA": "ogd_data",
+
+    "COMPANY_MUTATIONS_DB_COLUMNS": ["mutationType_pretty", "publication_date", "registryOfCommerceJournalDate", "sogcId", "gemeinde_code", "gemeinde", "message_cleansed", "uid", "name", "legalForm_code", "legalForm_name", "noga_code", "noga_art", "noga_abschnitt_code", "noga_abschnitt", "noga_abteilung"],
+    "COMPANY_MUTATIONS_DB_COLUMN_NAMES": ["kategorie", "publikationsdatum_shab", "journaldatum_handelsregister", "id_shab", "firmensitz_code", "firmensitz", "meldung", "uid", "firmenname", "rechtsform_code", "rechtsform", "noga_code", "noga", "noga_abschnitt_code", "noga_abschnitt", "noga_abteilung"],
+    "COMPANY_MUTATIONS_DB_TABLE": "zefix_mutationen",
+
+    "COMPANY_RELOCATIONS_DB_COLUMNS": ["category", "publication_date", "registryOfCommerceJournalDate", "sogcId", "firmensitz_neu_code", "firmensitz_neu", "firmensitz_neu_canton_short", "firmensitz_bisher_code", "firmensitz_bisher", "firmensitz_bisher_canton_short", "message_cleansed", "uid", "name", "legalForm_code", "legalForm_name", "noga_code", "noga_art", "noga_abschnitt_code", "noga_abschnitt", "noga_abteilung"],
+    "COMPANY_RELOCATIONS_DB_COLUMN_NAMES": ["kategorie", "publikationsdatum_shab", "journaldatum_handelsregister", "id_shab", "firmensitz_neu_code", "firmensitz_neu", "firmensitz_neu_canton", "firmensitz_bisher_code", "firmensitz_bisher", "firmensitz_bisher_canton", "meldung", "uid", "firmenname", "rechtsform_code", "rechtsform", "noga_code", "noga", "noga_abschnitt_code", "noga_abschnitt", "noga_abteilung"],
+    "COMPANY_RELOCATIONS_DB_TABLE": "zefix_adressaenderungen",
+
+    "COMPANY_INVENTORY_RELEVANT_COLUMNS": ["legalSeatId", "legalSeat", "uid", "name", "zusatz", "strassenbezeichnung", "strassenbezeichnung_loc", "eingangsnummer_gebaeude", "eingangsnummer_gebaeude_loc", "postleitzahl", "postleitzahl_loc", "ort", "gemeindename_loc", "noga_codes", "rechtsform_code", "rechtsform", "status", "noga_abschnitt_code", "noga_abschnitt", "noga_abteilung", "noga_gruppe", "noga_klasse", "noga_art", "purpose", "firmensitz_bezirk_nr", "firmensitz_bezirk", "zefix_web_eintrag", "egid_loc", "e_eingangskoordinate_loc", "n_eingangskoordinate_loc", "koordinaten", "sogcDate", "matching_style", "comment", "last_update", "registry_link"],
+    "COMPANY_INVENTORY_OGD_COLUMNS": ["legalseatid", "legalseat", "uid", "name", "zusatz" ,"strassenbezeichnung" ,"eingangsnummer_gebaeude" ,"postleitzahl", "ort" ,"firmensitz_bezirk_nr", "firmensitz_bezirk", "status", "purpose", "rechtsform_code", "rechtsform", "noga_codes", "noga_art", "noga_abschnitt_code", "noga_abschnitt", "noga_abteilung", "registry_link", "egid_loc", "e_eingangskoordinate_loc", "n_eingangskoordinate_loc", "koordinaten", "matching_style", "last_update"],
+    "COMPANY_INVENTORY_OGD_COLUMN_NAMES": ["firmensitz_code", "firmensitz", "uid", "firmenname", "zusatz", "strassenbezeichnung", "eingangsnummer_gebaeude", "postleitzahl", "ort", "firmensitz_bezirk_nr", "firmensitz_bezirk", "status", "zweck", "rechtsform_code", "rechtsform", "noga_code", "noga", "noga_abschnitt_code", "noga_abschnitt", "noga_abteilung", "kantonaler_auszug_link", "egid", "e_eingangskoordinate", "n_eingangskoordinate", "koordinaten", "lokalisierungsmethode", "datum"],
+    "COMPANY_INVENTORY_DB_TABLE": "zefix_unternehmen",
+
+    "ADDRESS_CORRECTIONS_TABLE": "zefix_adresskorrekturen",
+
+    "NOMINATIM_SEARCH_COLUMNS": ["strassenbezeichnung", "eingangsnummer_gebaeude", "postleitzahl"],
+
+    "ZEFIX_COMMUNITIES_ENDPOINT": "https://www.zefix.admin.ch/ZefixPublicREST/api/v1/community",
+    "ZEFIX_LEGAL_FORMS_ENDPONT": "https://www.zefix.admin.ch/ZefixPublicREST/api/v1/legalForm",
+    "BASE_URL_SOGC": "https://www.zefix.admin.ch/ZefixPublicREST/api/v1/sogc/bydate/",
+    "BASE_URL_SEARCH": "https://www.zefix.admin.ch/ZefixPublicREST/api/v1/company/search",
+    "BASE_URL_COMPANY": "https://www.zefix.admin.ch/ZefixPublicREST/api/v1/company/uid/",
+    "BURWEB_BASE_URL": "https://www.burweb2.admin.ch/BurWeb.Services.External/api/v1/Enterprise/",
+
+    "LEGAL_FORMS": "https://input.i14y.admin.ch/api/Metadata/concepts/byId/08dad8ff-f18a-560b-bfa6-20767f2afb17/export/json",
+    "CANTON_INFORMATION": "https://input.i14y.admin.ch/api/Metadata/concepts/byId/08d94b89-bf4d-a423-8add-dde94d0cd1f4/export/json",
+    
+    "NOGA_ABTEILUNG_LOOKUP_LINK": "https://www.i14y.admin.ch/api/Nomenclatures/HCL_NOGA/levelexport/CSV?language=de&level=2&annotations=false",
+    "NOGA_ABTEILUNG_LINK": "https://input.i14y.admin.ch/api/Metadata/concepts/byId/08d94604-e058-62a2-aa25-53f84b974201/export/json",
+    "NOGA_ABSCHNITT_LINK": "https://www.i14y.admin.ch/api/Nomenclatures/HCL_NOGA/levelexport/CSV?language=de&level=1&annotations=false",
+    "NOGA_GRUPPE_LINK": "https://input.i14y.admin.ch/api/Metadata/concepts/byId/08d94604-e5ac-f859-9ed7-f51fe87baa25/export/json",
+    "NOGA_KLASSE_LINK": "https://input.i14y.admin.ch/api/Metadata/concepts/byId/08d94604-db03-1909-a097-569cb9836253/export/json",
+    "NOGA_ART_LINK": "https://input.i14y.admin.ch/api/Metadata/concepts/byId/08d94604-f12a-5d82-b6b4-fdc55b9b4750/export/json",
+
+    "KGWR_ADRESSEN": "https://data.bl.ch/api/explore/v2.1/catalog/datasets/12180/exports/parquet?lang=de&timezone=Europe%2FParis",
+    "DISTRICT_DATA_LINK": "https://data.bl.ch/api/explore/v2.1/catalog/datasets/10110/exports/csv?lang=de&timezone=Europe%2FParis&use_labels=true&delimiter=%3B",
+
+    "BFS_COMMUNES_SNAPSHOT": "https://sms.bfs.admin.ch/WcfBFSSpecificService.svc/AnonymousRest/communes/snapshots?useBfsCode=true",
+    "BFS_COMMUNE_LEVELS": "https://sms.bfs.admin.ch/WcfBFSSpecificService.svc/AnonymousRest/communes/levels?useBfsCode=false&labelLanguages=de",
+
+    "REGISTRY_REGISTRY_BASE_LINK": "https://bl.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=",
+
+    "WG84_EPSG": "epsg:4326",
+    "LV95_EPSG": "epsg:2056",
+
+    "ODS_FTP_DIRECTORY": "handelsregister"
+}

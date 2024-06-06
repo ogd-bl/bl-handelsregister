@@ -1,0 +1,7 @@
+pandas
+psycopg2
+pytz
+python-dotenv
+pyproj
+pyarrow
+rapidfuzz
